@@ -1,18 +1,22 @@
 version: 2.1
+
+orbs:
+   node: circleci/node@1.1.6
+
 jobs:
   build_and_run:
     docker:
-      - image: circleci/node:
+      - image: circleci/node:14
     steps:
       - checkout
       - run:
           name: Install npm dependencies
-          command: |
-            npm install --save        
+          command: npm install --save        
       - run:
           name: Run the app
-          command: |
-            npx cypress run
+          command: npx cypress run
+      working_directory: ~/Cypress_AMPOL_UI
+      
 workflows:
   run_my_app:
     jobs:
