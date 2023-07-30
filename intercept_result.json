@@ -1,0 +1,41 @@
+{
+  "headers": {
+    "content-type": "application/json; charset=utf-8",
+    "request-context": "appId=cid-v1:b125ee50-ba0d-4e51-9c84-33f1e0e32a0f",
+    "access-control-allow-origin": "*",
+    "x-cache": "CONFIG_NOCACHE",
+    "x-azure-ref": "0sMrFZAAAAAC4ErHfsPN4QIgcG14Tk2pZU1lEMDNFREdFMTgwNwA0YWY4MzlhMi0xY2E3LTRmMTEtYThhNi0wNmFjZDExMmY0ZGU=",
+    "date": "Sun, 30 Jul 2023 02:28:00 GMT",
+    "set-cookie": [
+      "visid_incap_2818567=X84wnJTRQBuHaehHeSDyB7DKxWQAAAAAQUIPAAAAAADK0xDbg3Q5GlowUty4PfXO; expires=Sun, 28 Jul 2024 12:04:02 GMT; HttpOnly; path=/; Domain=.ampolenergy.com.au",
+      "nlbi_2818567=YGlTfi7O6V4lzTrM5760ggAAAADadvZK1JiBmXOkedqVZiEv; path=/; Domain=.ampolenergy.com.au",
+      "incap_ses_811_2818567=0ZpjXyxYvVJlFux/UkJBC7DKxWQAAAAAqDDp42a4JrUJaxjLOVukFg==; path=/; Domain=.ampolenergy.com.au"
+    ],
+    "x-cdn": "Imperva",
+    "content-encoding": "gzip",
+    "transfer-encoding": "chunked",
+    "x-iinfo": "12-2791653-2791657 NNYY CT(3 22 0) RT(1690684079897 15) q(0 0 0 -1) r(2 2) U6"
+  },
+  "url": "https://api.ampolenergy.com.au/onboarding/v1.0/lead",
+  "method": null,
+  "httpVersion": "1.1",
+  "statusCode": 201,
+  "statusMessage": "Created",
+  "body": {
+    "leadId": "bf1951ba-3b5d-4add-9180-0fe9718bc7e6",
+    "sessionKey": "Rsok5du73hSa2HuWwlzDVAFLTTd4lZiH",
+    "currentPage": "Postcode",
+    "leadStatus": "Pending",
+    "primaryContact": {
+      "address": {
+        "postCode": "4011",
+        "suburbOrPlaceOrLocality": "Clayfield"
+      }
+    },
+    "billingAddress": {
+      "postCode": "4011",
+      "suburbOrPlaceOrLocality": "Clayfield"
+    },
+    "addressEnteredOnPostCodePage": false
+  }
+}
