@@ -1,24 +1,18 @@
 version: 2.1
-orbs:
-  node: circleci/node@5.0.2
-
 jobs:
   build_and_run:
-    executor: node/default
+    docker:
+      - image: circleci/node:
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
       - run:
           name: Install npm dependencies
           command: |
-                npm install --save        
+            npm install --save        
       - run:
           name: Run the app
           command: |
-                npx cypress run
-          
-
+            npx cypress run
 workflows:
   run_my_app:
     jobs:
