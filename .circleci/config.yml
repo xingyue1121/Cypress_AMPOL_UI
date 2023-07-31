@@ -1,20 +1,17 @@
 version: 2.1
 
 orbs:
-   node: circleci/node@1.1.6
+   cypress: cypress-io/cypress@3
 
 jobs:
   build_and_run:
     docker:
-      - image: circleci/node:14
+      - image: cypress/browsers:<chrome>
     steps:
       - checkout
       - run:
           name: Install npm dependencies
           command: npm install --save
-      - run:
-          name: Install extra dependencies
-          command: sudo apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb    
       - run:
           name: Run the app
           command: npx cypress run
