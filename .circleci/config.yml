@@ -15,7 +15,7 @@ jobs:
       - run:
           name: Run the app
           command: npx cypress run
-      working_directory: ~/Cypress_AMPOL_UI
+    working_directory: ~/Cypress_AMPOL_UI
       
 workflows:
   run_my_app:
