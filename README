@@ -13,3 +13,27 @@ Step 3: Run the Cypress UI tests on browser (such as Chrome)
            
 After the tests complete, you can see in the project folder a intercept_reuslt.json file generated, where the intercepted network response is written. 
 
+..............................................................................................................
+
+Bonus: If you want to run the Cypress test via CircleCI, please follow the steps:
+
+Step 1: Setting Up CircleCI:
+        a. If you don't already have one, create an account on the CircleCI website (circleci.com).
+        b. Establish a connection between CircleCI and your GitHub repository by accessing the "Projects" section and selecting "Set Up Project."
+        c. Grant CircleCI appropriate access permissions to your chosen repository.
+
+Step 2: Defining the CircleCI Configuration File:
+        a. At the root of your Node.js project, create a file called .circleci/config.yml
+         b. Copy the attached config.yml file to your Node.js project
+
+Step 3: Commit and Push to GitHub:
+        a. Commit the .circleci/config.yml file to your project's repository.
+        b. Push the changes to your GitHub repository.
+
+Step 4: Triggering a Build on CircleCI:
+        a. Visit the CircleCI dashboard for your project and navigate to the project's page.
+        b. Trigger the first build, CircleCI will now execute the defined steps in the configuration file and provide feedback on the build process.
+
+Feel free to reach out to me if you need any other information
+
+
