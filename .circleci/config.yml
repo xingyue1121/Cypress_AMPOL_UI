@@ -11,7 +11,10 @@ jobs:
       - checkout
       - run:
           name: Install npm dependencies
-          command: npm install --save        
+          command: npm install --save
+      - run:
+          name: Install extra dependencies
+          command: apt-get install libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb       
       - run:
           name: Run the app
           command: npx cypress run
